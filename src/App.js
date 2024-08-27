@@ -15,7 +15,7 @@ const App = () => {
   const [animations, setAnimations] = useState([]);
 
   useEffect(() => {
-    const socket = new WebSocket('ws://https://hitwicket-backend.vercel.app/');
+    const socket = new WebSocket('ws:https://hitwicket-backend-vsz2.onrender.com/');
     setWs(socket);
 
     socket.onmessage = (event) => {
